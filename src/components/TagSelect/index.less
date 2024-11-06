@@ -1,0 +1,64 @@
+.tag-select {
+  color: #2177d1;
+  height: fit-content;
+  .ant-select-arrow {
+    display: none;
+  }
+  .tz-select.ant-select:not(.ant-select-customize-input) {
+    padding: 0;
+    border-radius: 0;
+    .ant-select-selector {
+      cursor: pointer;
+      color: #2177d1;
+      border: none;
+      padding: 0 4px;
+      border-radius: 0;
+      background-color: transparent;
+      :hover {
+        // background-color: transparent;
+      }
+      .ant-select-selection-item {
+        padding-inline-end: 0;
+      }
+    }
+    :hover {
+      // background-color: rgba(33, 119, 209, 0.05);
+    }
+  }
+  .ant-select-single.ant-select-open .ant-select-selection-item {
+    color: #2177d1 !important;
+  }
+  .tz-select-dropdown {
+    min-width: 120px;
+  }
+  .tz-select.ant-select-multiple .ant-select-selector::after {
+    line-height: 24px;
+    margin: 0;
+  }
+  .ant-select-selection-overflow-item-rest .ant-select-selection-item {
+    background: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+  }
+  .tz-select {
+    cursor: pointer;
+    &:hover {
+      background: rgba(33, 119, 209, 0.05);
+    }
+    .ant-select-selection-item-content,
+    .ant-select-selection-item {
+      cursor: pointer;
+    }
+  }
+  .ant-select-selector .ant-select-selection-item {
+    height: 20px;
+    line-height: 20px;
+  }
+  .tz-select.ant-select-multiple .tz-select-selection-item {
+    background: transparent;
+    border: none;
+  }
+  .ant-select-multiple .ant-select-selection-overflow {
+    // flex-wrap: nowrap;
+  }
+}

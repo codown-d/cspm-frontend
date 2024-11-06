@@ -1,0 +1,21 @@
+.ellipsis-text-container {
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.ellipsis-text {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-text.overflowed {
+  padding-right: 160px; /* Adjust this value to ensure space for "Read More" */
+}
+
+.read-more {
+  flex-shrink: 0;
+  white-space: nowrap;
+}

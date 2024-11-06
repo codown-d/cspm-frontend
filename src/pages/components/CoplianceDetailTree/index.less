@@ -1,0 +1,46 @@
+.itemsTree {
+  :global(.ant-tree-node-content-wrapper) {
+    padding: 0 4px;
+    :global(.ant-tree-iconEle) {
+      display: none;
+    }
+  }
+  :global(.ant-tree-switcher .ant-tree-switcher-icon.icon-arrow) {
+    font-size: 14px;
+    color: #8e97a3;
+    &:hover {
+      background: rgba(33, 119, 209, 0.05);
+      color: #2177d1;
+    }
+  }
+  :global(.ant-tree-treenode .ant-tree-switcher) {
+    margin-top: 2px;
+  }
+  :global(.ant-tree-list-holder-inner .ant-tree-treenode) {
+    &:first-child {
+      border-top: none;
+    }
+  }
+  :global(.ant-tree-treenode) {
+    border-bottom: 1px dashed #f4f6fa;
+    padding: 5px 0;
+    // border-top: 1px solid #f0f0f0;
+    &:hover:before {
+      background: rgba(33, 119, 209, 0.05);
+    }
+  }
+  &:global(.ant-tree.ant-tree-directory .ant-tree-treenode-selected::before) {
+    background: transparent;
+  }
+  &:global(.ant-tree.ant-tree-directory .ant-tree-treenode:hover) {
+    &:global(:before) {
+      background: transparent;
+    }
+    // bottom: 0;
+    // height: 38px;
+    // background: transparent;
+    :global(.title-row) {
+      background: rgba(33, 119, 209, 0.05);
+    }
+  }
+}

@@ -1,0 +1,183 @@
+.tz-button {
+  // height: 30px;
+  // line-height: 1.5;
+  min-width: 60px;
+  box-shadow: none;
+  &.ant-btn-primary:disabled,
+  &.ant-btn-default:disabled,
+  &.ant-btn-primary.ant-btn-disabled {
+    color: #b3bac6;
+    border-color: #e7e9ed;
+    background: #f5f5f5;
+    &:not(:disabled):hover {
+      color: #b3bac6;
+      border-color: #e7e9ed;
+      background: #f5f5f5;
+    }
+  }
+  .ant-btn-icon {
+    vertical-align: middle;
+  }
+  &.ant-btn-default:not(.ant-btn-dangerous):not(:disabled):not(
+      .ant-btn-disabled
+    ) {
+    // color: #2177d1;
+    // border: 1px solid #e7e9ed;
+    // &:hover {
+    //   border-color: #2177d1;
+    //   color: #2177d1;
+    //   background-color: rgba(33, 119, 209, 0.05);
+    // }
+    //取消按钮样式
+    // &.cancel-btn {
+    //   color: #6c7480;
+    //   border: 1px solid #dfe1e6;
+    //   &:hover {
+    //     color: #2177d1;
+    //     border: 1px solid #e7e9ed;
+    //     background: rgba(33, 119, 209, 0.05);
+    //   }
+    //   &:focus {
+    //     color: #2177d1;
+    //     border: 1px solid #e7e9ed;
+    //     background: rgba(33, 119, 209, 0.1);
+    //   }
+    // }
+    &.cancel-btn {
+      border: 1px solid #dfe1e6;
+      color: #6c7480;
+      &:hover {
+        color: rgba(108, 116, 128, 0.95);
+        border: 1px solid #e7e9ed;
+        background: rgba(108, 116, 128, 0.05);
+      }
+      &:active {
+        color: rgba(108, 116, 128, 0.9);
+        border: 1px solid #e7e9ed;
+        background: rgba(108, 116, 128, 0.1);
+      }
+    }
+  }
+  &:not(.ant-btn-text).ant-btn-dangerous {
+    border: 1px solid #e7e9ed;
+  }
+
+  & > i.icon {
+    // padding-right: 4px;
+  }
+
+  &.ant-btn-lg:not(.ant-btn-text) {
+    min-width: 100px;
+  }
+  &.ant-btn-sm {
+    min-width: 40px;
+    // height: 22px;
+    // line-height: 20px;
+    // padding: 1px 8px;
+    // border-radius: 4px;
+  }
+
+  &.ant-btn-default:not(:disabled) {
+    &:hover,
+    // &:focus,
+    &:active {
+      // border-color: #2177d1;
+      // color: #2177d1;
+      background-color: rgba(33, 119, 209, 0.05);
+    }
+
+    &.ant-btn-dangerous:not(:disabled):not(.ant-btn-disabled) {
+      // color: rgba(233, 84, 84, 1);
+      border-color: #e7e9ed;
+    }
+    &.ant-btn-dangerous:not(:disabled):not(.ant-btn-disabled):hover {
+      color: rgba(233, 84, 84, 1);
+      border-color: rgba(233, 84, 84, 1);
+      background-color: rgba(233, 84, 84, 0.05);
+    }
+  }
+  &.ant-btn-primary {
+    // background-color: #2177d1;
+    // &:focus {
+    //   color: #fff;
+    //   border-color: #2177d1;
+    //   background-color: #2177d1;
+    // }
+    // &:hover {
+    //   color: #fff;
+    //   border-color: #2d94ff;
+    // background-color: rgb(45, 148, 255);
+    // }
+    &:not(:disabled):not(.ant-btn-disabled):hover {
+      background-color: rgb(45, 148, 255);
+    }
+    &.ant-btn-dangerous:not(:disabled):not(.ant-btn-disabled) {
+      color: #fff;
+      border-color: rgba(233, 84, 84, 1);
+      background-color: rgba(233, 84, 84, 1);
+      &:hover,
+      &:focus {
+        color: #fff;
+        border-color: #ff6161;
+        background-color: #ff6161;
+      }
+    }
+  }
+  &.ant-btn-text:not(:disabled) {
+    color: #2177d1;
+    // margin-left: -8px;
+    // padding: 1px 8px;
+    min-width: 40px;
+    // border: 0px;
+    border-color: transparent;
+    text-align: center;
+    // border-radius: 4px;
+    // height: 22px;
+    // line-height: 20px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #2177d1;
+      border-color: transparent;
+      background: rgba(33, 119, 209, 0.05);
+    }
+  }
+  &.ant-btn-dangerous:not(:disabled) {
+    color: rgba(233, 84, 84, 1);
+    &:hover,
+    &:focus {
+      color: rgba(233, 84, 84, 1);
+      background-color: rgba(233, 84, 84, 0.05);
+    }
+  }
+  &.ant-btn-dangerous:not(:disabled) {
+    color: rgba(233, 84, 84, 1);
+    &:hover,
+    &:focus {
+      // color: rgba(233, 84, 84, 1);
+      background-color: rgba(233, 84, 84, 0.05);
+    }
+  }
+
+  &.ant-btn-link {
+    padding: 2px 0px;
+    margin-left: 0px;
+    min-width: auto;
+    i.icon {
+      padding-right: 0px;
+    }
+  }
+  &.btn-disabled {
+    color: #b3bac6;
+    cursor: no-drop;
+    &:hover,
+    &:focus {
+      color: #b3bac6;
+      background: transparent;
+    }
+  }
+  &:not(:disabled):focus-visible {
+    outline: none;
+  }
+}

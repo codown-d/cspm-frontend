@@ -1,0 +1,27 @@
+.frameworkPage {
+  .statusItem {
+    :global(.ant-form-item-control-input) {
+      min-height: 18px;
+    }
+  }
+  :global(.tz-card).hasError {
+    border-color: #e95454;
+    .errorInfo {
+      color: #e95454;
+      display: flex;
+      align-items: center;
+      // font-weight: 400;
+      i {
+        font-style: normal;
+      }
+      .errorInfoTxt {
+        font-size: 12px;
+        margin-left: 8px;
+        font-weight: 400;
+      }
+    }
+    :global(.validator-checkbox .ant-checkbox-inner) {
+      border-color: #e95454;
+    }
+  }
+}

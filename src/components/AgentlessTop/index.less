@@ -1,0 +1,33 @@
+@import url(../../var.less);
+
+.severity(@color:@UNKNOWN) {
+  background: fade(@color, 2%);
+  .icon-box {
+    background: fade(@color, 5%);
+    color: @color;
+  }
+  .num {
+    color: @color;
+  }
+  &:hover {
+    background: fade(@color, 5%);
+  }
+}
+
+.agentless-top {
+  .CRITICAL {
+    .severity(@CRITICAL);
+  }
+  .HIGH {
+    .severity(@HIGH);
+  }
+  .MEDIUM {
+    .severity(@MEDIUM);
+  }
+  .LOW {
+    .severity(@LOW);
+  }
+  .UNKNOWN {
+    .severity(@UNKNOWN);
+  }
+}

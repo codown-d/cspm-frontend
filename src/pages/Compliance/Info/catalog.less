@@ -1,0 +1,87 @@
+.catalog {
+  position: relative;
+  overflow-y: auto;
+  :global(
+      .ant-tree
+        .ant-tree-treenode
+        .ant-tree-node-content-wrapper.ant-tree-node-selected
+    ) {
+    background: transparent !important;
+  }
+  :global(.ant-tree-treenode-selected) {
+    color: #2177d1;
+  }
+  :global(.ant-tree-title) {
+    .isAll {
+      font-weight: 550;
+      margin-inline-start: -12px;
+    }
+  }
+  :global(.ant-tree-treenode) {
+    padding: 0;
+    align-items: center;
+    overflow: hidden;
+    :global(.ant-tree-switcher-icon) {
+      font-size: 16px;
+      width: 20px;
+      height: 20px;
+      &:hover {
+        background: rgba(33, 119, 209, 0.05);
+      }
+    }
+    &:not(&:first-of-type):hover {
+      background: rgba(33, 119, 209, 0.05);
+    }
+  }
+  :global(.ant-tree-node-content-wrapper) {
+    width: 0;
+    // margin: 0 12px;
+    padding: 7px 0;
+    line-height: 22px;
+  }
+  :global(.ant-tree-node-content-wrapper-normal) {
+    padding-inline-start: 12px;
+  }
+
+  :global(.ant-tree .ant-tree-node-content-wrapper):hover {
+    background: transparent;
+  }
+  :global(.ant-tree) {
+    :global(.ant-tree-treenode:hover:before) {
+      background: transparent;
+    }
+    :global(.ant-tree-indent-unit) {
+      width: 12px;
+    }
+    :global(.ant-tree-treenode-selected) {
+      &::before {
+        background: transparent;
+      }
+    }
+    :global(.ant-tree-switcher) {
+      padding: 0;
+      width: 16px;
+      height: 16px;
+      margin-top: 8px;
+      line-height: 22px;
+      color: #8e97a3;
+      margin-inline: 0 8px;
+      &:global(.ant-tree-switcher-noop) {
+        padding: 0;
+        display: none;
+      }
+    }
+  }
+  :global(.tz-badge .ant-badge-count) {
+    height: 16px;
+    line-height: 16px;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    background: transparent;
+    color: #e95454;
+    padding-inline: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: none;
+  }
+}

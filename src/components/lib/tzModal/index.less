@@ -1,0 +1,86 @@
+@import url(../tz-button/index.less);
+.tz-modal {
+  .ant-modal-content {
+    border-radius: 8px;
+    padding: 20px 30px 24px;
+    // max-height: 80vh;
+  }
+  .ant-modal-title {
+    // font-weight: 600;
+    // font-size: 18px;
+    // color: #1e222a;
+  }
+  .ant-modal-header {
+    padding: 1px 0;
+    margin-bottom: 12px;
+  }
+  // .ant-modal-header {
+  //   padding: 24px 32px 20px 32px;
+  //   .ant-modal-title {
+  //     font-weight: 600;
+  //     color: #1e222a;
+  //   }
+  // }
+  .ant-modal-body {
+    padding-top: 0;
+  }
+  .ant-modal-footer {
+    padding-top: 4px;
+    margin-top: 0;
+    .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+      margin-left: 10px;
+    }
+  }
+  .ant-modal-close {
+    top: 26px;
+    inset-inline-end: 28px;
+  }
+}
+
+.ant-modal-close-x {
+  width: auto;
+  height: auto;
+
+  .icon-close {
+    border-radius: 4px;
+    color: #b3bac6;
+    font-weight: 500;
+    &:hover {
+      color: rgba(33, 119, 209, 1);
+      background: rgba(33, 119, 209, 0.05);
+    }
+  }
+}
+.tz-confirm-modal {
+  .ant-modal-confirm-title {
+    // line-height: 36px;
+    margin-bottom: 4px;
+    margin-top: -12px;
+    // font-size: 18px;
+    font-weight: 600;
+  }
+  .ant-modal-content {
+    border-radius: 8px;
+    padding: 20px 30px 24px;
+  }
+  .ant-modal-confirm-content {
+    padding-inline: 8px;
+    font-size: 14px;
+  }
+  .ant-modal-body {
+    margin-top: 12px;
+  }
+
+  .ant-modal-confirm .ant-modal-confirm-btns .ant-btn + .ant-btn {
+    margin-left: 10px;
+  }
+  .ant-modal-confirm-btns,
+  .ant-modal-footer {
+    margin-top: 24px;
+    padding-top: 0;
+  }
+  .ant-modal-close {
+    top: 12px;
+    inset-inline-end: 12px;
+  }
+}

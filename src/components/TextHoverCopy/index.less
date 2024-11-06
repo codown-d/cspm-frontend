@@ -1,0 +1,25 @@
+.text-hover-copy {
+  position: relative;
+  line-height: 22px;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  align-items: flex-start;
+
+  //翻译修改的间距为4 11/12
+  .icon-fuzhi {
+    opacity: 0;
+    display: none;
+  }
+
+  .text-hover-copy-content:hover {
+    color: #2177d1 !important;
+    cursor: pointer;
+
+    .icon-fuzhi {
+      opacity: 1;
+      color: #2177d1;
+      display: inline-block;
+    }
+  }
+}

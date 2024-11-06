@@ -1,0 +1,41 @@
+.tooltip-any-kla {
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  &.overflow {
+    position: relative;
+    &::after {
+      content: '...';
+      display: inline-block;
+      position: absolute;
+      background-color: #fff;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      line-height: 32px;
+    }
+  }
+  .content-x11 {
+    flex: 1;
+  }
+}
+
+.tooltip-overcls-a1 {
+  .ant-tooltip-arrow::before {
+    background: rgba(255, 255, 255, 0.75) !important;
+  }
+  .ant-tooltip-content {
+    .ant-tooltip-inner {
+      background-color: #fff;
+      color: #000;
+      > :first-child {
+        white-space: initial;
+        word-break: break-all;
+      }
+    }
+    .ant-space {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

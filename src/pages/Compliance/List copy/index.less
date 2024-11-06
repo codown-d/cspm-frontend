@@ -1,0 +1,57 @@
+.platformClassifyList {
+  :global(.ant-pro-checkcard-group) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  :global(.tz-check-card) {
+    border-radius: 8px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    border: 1px solid #f4f6fa;
+    width: auto;
+    &:hover {
+      border-color: #f4f6fa;
+      box-shadow: 0px 2px 16px 0px rgba(144, 168, 205, 0.25);
+    }
+  }
+  :global(.ant-pro-checkcard-header-left) {
+    width: 100%;
+  }
+  :global(.ant-pro-checkcard-checked) {
+    background-color: transparent;
+    &:after {
+      display: none;
+    }
+  }
+  :global(.ant-pro-checkcard-title) {
+    white-space: inherit;
+    display: block;
+  }
+  .titContent {
+    width: calc(100% - 48px);
+  }
+  .description {
+    border-top: 1px solid #f4f6fa;
+    padding-inline: 12px;
+    padding-top: 4px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .platformClassifyList {
+    :global(.ant-pro-checkcard-group) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .platformClassifyList {
+    :global(.ant-pro-checkcard-group) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}

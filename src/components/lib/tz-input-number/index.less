@@ -1,0 +1,21 @@
+.tz-input-number {
+  width: 100%;
+  border: 1px solid #e7e9ed;
+  .ant-input-number-group-addon {
+    background: transparent;
+  }
+
+  .ant-input-number-group .ant-input-number {
+    border-right: 0;
+
+    &:hover + .ant-input-number-group-addon {
+      border-color: #2177d1;
+    }
+  }
+
+  .ant-input-number-focused + .ant-input-number-group-addon {
+    box-shadow: 0 0 0 2px rgb(33 119 209 / 20%);
+    border-color: #2177d1;
+    outline: 0;
+  }
+}

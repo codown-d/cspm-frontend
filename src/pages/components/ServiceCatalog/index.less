@@ -1,0 +1,129 @@
+.CatalogAffix {
+  width: 220px;
+}
+.catalog {
+  position: relative;
+  width: 220px;
+  border: 1px solid #f4f6fa;
+  padding-block: 8px;
+  border-radius: 8px;
+  height: fit-content;
+  overflow-y: auto;
+  :global(.tz-tree) {
+    padding-top: 8px;
+    border-top: 1px solid #f4f6fa;
+    border-radius: 0;
+  }
+  .rowAll {
+    position: relative;
+    padding: 0;
+    align-items: center;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    margin-block-end: 8px;
+    padding-inline: 16px;
+    cursor: pointer;
+    :global(.tz-badge) {
+      background: transparent;
+    }
+    &:hover {
+      background-color: rgba(33, 119, 209, 0.05);
+    }
+  }
+  :global(
+      .ant-tree
+        .ant-tree-treenode
+        .ant-tree-node-content-wrapper.ant-tree-node-selected
+    ) {
+    background: transparent !important;
+    // color: #2177d1;
+  }
+  :global(.ant-tree-treenode-selected) {
+    background: transparent;
+    // color: #2177d1;
+  }
+  :global(.ant-tree-checkbox) {
+    margin-inline-end: 4px;
+    margin-inline-end: 8px;
+    align-self: initial;
+    margin-top: initial;
+  }
+  :global(.ant-tree-treenode) {
+    position: relative;
+    padding: 0;
+    align-items: center;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    // margin-block: 4px;
+    padding-inline: 16px 12px;
+    // border-bottom: 1px solid #f4f6fa;
+    // &:global(.ant-tree-treenode-switcher-open, ),
+    // &:global(.ant-tree-treenode-switcher-close, ) {
+    //   border-bottom: 1px solid #f4f6fa;
+    // }
+    :global(.ant-tree-switcher-icon) {
+      font-size: 16px;
+      width: 16px;
+      height: 16px;
+      &:hover {
+        background-color: rgba(30, 34, 42, 0.06);
+      }
+    }
+    &:hover {
+      background-color: rgba(33, 119, 209, 0.05);
+    }
+  }
+  :global(.ant-tree-node-content-wrapper) {
+    width: 0;
+    margin: 0 12px;
+    padding: 7px 0;
+    line-height: 22px;
+  }
+
+  :global(.ant-tree .ant-tree-node-content-wrapper):hover {
+    background: transparent;
+  }
+  :global(.ant-tree) {
+    :global(.ant-tree-treenode:hover:before) {
+      background: transparent;
+    }
+    :global(.ant-tree-treenode-selected) {
+      &::before {
+        background: transparent;
+      }
+    }
+    :global(.ant-tree-switcher) {
+      position: absolute;
+      right: 16px;
+      top: 10px;
+      z-index: 9;
+      padding: 0;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      color: #8e97a3;
+      &:global(.ant-tree-switcher-noop) {
+        padding: 0;
+      }
+    }
+  }
+  .blue {
+    &:global(.tz-badge .ant-badge-count) {
+      color: #2177d1;
+    }
+  }
+  :global(.tz-badge .ant-badge-count) {
+    height: 16px;
+    line-height: 16px;
+    border-radius: 8px;
+    // margin-bottom: 2px;
+    background: transparent;
+    color: #e95454;
+    padding-inline: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: none;
+  }
+}

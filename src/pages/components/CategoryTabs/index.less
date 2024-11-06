@@ -1,0 +1,34 @@
+.withTit {
+  .ant-tabs-tab {
+    padding-bottom: 4px;
+  }
+  &.row-reverse.tz-tabs > .ant-tabs-nav {
+    flex-direction: row-reverse;
+    .ant-tabs-nav-wrap {
+      justify-content: flex-end;
+    }
+  }
+  &.tz-tabs > .ant-tabs-nav {
+    margin-bottom: 0;
+    .ant-tabs-nav-list {
+      margin-left: 0;
+    }
+    .ant-tabs-ink-bar {
+      &::before {
+        position: absolute;
+        left: calc(50% - 12px);
+        content: ' ';
+        display: inline-block;
+        width: 100%;
+        max-width: 24px;
+        height: 100%;
+        background: #2177d1;
+        border-radius: 4px;
+      }
+      background: transparent;
+    }
+  }
+  .ant-tabs-nav::before {
+    border: none;
+  }
+}

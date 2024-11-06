@@ -1,0 +1,80 @@
+.ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  background-color: transparent;
+}
+.ant-table-wrapper .ant-table.ant-table-middle .ant-table-title,
+.ant-table-wrapper .ant-table.ant-table-middle .ant-table-footer,
+.ant-table-wrapper .ant-table.ant-table-middle .ant-table-thead > tr > th,
+.ant-table-wrapper .ant-table.ant-table-middle .ant-table-tbody > tr > th,
+.ant-table-wrapper .ant-table.ant-table-middle .ant-table-tbody > tr > td,
+.ant-table-wrapper .ant-table.ant-table-middle tfoot > tr > th,
+.ant-table-wrapper .ant-table.ant-table-middle tfoot > tr > td {
+  // padding: 10px 0 10px 16px;
+  // line-height: 16px;
+  // min-height: 40px;
+  // &.ant-table-selection-column {
+  //   padding: 14px 0;
+  // }
+}
+.ant-table-wrapper .ant-table.ant-table-middle .ant-table-thead > tr > th {
+  // padding: 10px 0 10px 16px;
+  // min-height: 40px;
+  // line-height: 16px;
+  // &.ant-table-selection-column {
+  //   padding: 6px 0;
+  // }
+}
+
+// .ant-table-wrapper .ant-table {
+//   color: #3e4653;
+// }
+.ant-page-header .ant-page-header-heading-title {
+  line-height: 28px;
+  color: #1e222a;
+  // font-weight: 500;
+  // min-height: 30px;
+  margin-block: -1px;
+  font-size: 20px;
+}
+// .ant-pro-page-container .ant-pro-page-container-warp-page-header {
+//   padding-block-start: 20px;
+//   padding-block-end: 16px;
+//   padding-inline: 32px;
+// }
+.ant-pro-page-container-children-container {
+  padding-block: 0;
+  padding-inline: 30px;
+}
+// .ant-btn-text {
+//   color: #2177d1;
+//   // padding: 1px 8px;
+//   border: 0;
+//   text-align: center;
+//   border-radius: 4px;
+//   // line-height: 22px;
+//   &:not(:disabled):not(.ant-btn-disabled):hover {
+//     color: #2177d1;
+//     border-color: transparent;
+//     background: rgba(33, 119, 209, 0.05);
+//   }
+// }
+.ant-pro-footer-bar {
+  padding-inline: 30px;
+  line-height: 54px;
+  border: none;
+  background: #fff;
+  box-shadow:
+    0 4px 16px 0 rgba(0, 0, 0, 0.05),
+    0 2px 8px 0 rgba(0, 0, 0, 0.05),
+    0 0 24px 0 rgba(33, 119, 209, 0.05);
+}
+.ant-pro-footer-bar-right > * {
+  margin-inline-end: 10px;
+  .ant-btn {
+    // padding: 6px 23px;
+  }
+}

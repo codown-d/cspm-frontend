@@ -1,0 +1,35 @@
+.taskDetail {
+  .statisticsCard {
+    :global(.head-row) {
+      margin-bottom: 16px;
+    }
+  }
+  :global(.graph-navi-case) {
+    grid-column-gap: 1px;
+    :global(.nav-item-case) {
+      background: transparent !important;
+    }
+  }
+  :global(.graph-navi-case) {
+    grid-column-gap: 1px;
+    :global(.nav-item-case) {
+      background: transparent !important;
+    }
+  }
+
+  :global(.graph-navi-case .overview-p-icon) {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+
+  :global(.graph-navi-case .nav-item-case) {
+    max-height: initial;
+    height: initial;
+    // padding-block: 10px;
+    min-height: 68px;
+    &.nav-item-case-abnormal {
+      align-items: flex-start;
+    }
+  }
+}

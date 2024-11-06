@@ -1,0 +1,124 @@
+.tz-form {
+  > .ant-row:last-child {
+    margin-bottom: 0;
+  }
+  .ant-input {
+    // color: #3e4653;
+  }
+  .ant-form-item {
+    margin-bottom: 18px;
+    .ant-form-item-explain-error {
+      line-height: 16px;
+      font-size: 12px;
+    }
+    .ant-form-item-label {
+      overflow: visible;
+      padding-bottom: 4px;
+      &
+        > label.ant-form-item-required:not(
+          .ant-form-item-required-mark-optional
+        )::before {
+        position: absolute;
+        left: -8px;
+        top: 6px;
+        content: '*';
+      }
+      // > label {
+      //   color: #6c7480;
+      // }
+    }
+    // &.ant-form-item-has-error {
+    //   .tz-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(
+    //       .ant-pagination-size-changer
+    //     ) {
+    //     .ant-select-selector {
+    //       border-color: #e95454;
+    //       box-shadow: 0 0 0 2px rgba(233, 84, 84, 0.1);
+    //     }
+    //     &:hover {
+    //       .ant-select-selector {
+    //         border-color: #e95454;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+  .ant-input-affix-wrapper {
+    // padding-top: 0px;
+    // padding-bottom: 0px;
+    // border-color: #e7e9ed;
+    > input.ant-input {
+      // height: 34px;
+    }
+    &:focus,
+    &-focused {
+      // box-shadow: none;
+      // border-color: #2177d1;
+    }
+  }
+  .ant-input {
+    // border-color: #e7e9ed;
+  }
+
+  // .ant-input-affix-wrapper-status-error:not(
+  //     .ant-input-affix-wrapper-disabled
+  //   ):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper {
+  //   border-color: #e95454;
+  //   &:hover {
+  //     border-color: #e95454;
+  //   }
+  // }
+  // .ant-form-item-control {
+  //   .ant-form-item-control-input {
+  //     min-height: initial;
+  //   }
+  //   .ant-form-item-extra {
+  //     font-size: 12px;
+  //     line-height: 20px;
+  //     color: #b3bac6;
+  //   }
+  // }
+
+  // .ant-form-item-explain {
+  //   font-size: 12px;
+  // }
+
+  &.ant-form-vertical .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+  &.ant-form-vertical .ant-form-item-label > label::after,
+  .ant-col-24.ant-form-item-label > label::after,
+  .ant-col-xl-24.ant-form-item-label > label::after {
+    visibility: inherit;
+  }
+
+  .form-item-block .ant-form-item-label > label {
+    // color: #6c7480;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .my-form-item-children {
+    // height: 34px;
+    border-radius: 4px;
+    border: 1px solid #e7e9ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > .tz-input-number {
+      flex: 1;
+    }
+    &:hover {
+      border-color: #2177d1;
+    }
+  }
+}
+
+.hide-label-after .ant-form-item-label {
+  > label {
+    width: 100%;
+    &::after {
+      visibility: hidden !important;
+    }
+  }
+}
